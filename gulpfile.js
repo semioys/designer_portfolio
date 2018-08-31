@@ -13,7 +13,7 @@ gulp.task("server", function() {
 
 gulp.task("js", function() {
   return gulp
-    .src(["./src/js/main.js"])
+    .src(["./src/js/jquery.animatedheadline.min.js", "./src/js/main.js"])
     .pipe(plugins.sourcemaps.init())
     .pipe(plugins.concat("main.min.js"))
     .pipe(
