@@ -1,2 +1,2 @@
 svg4everybody();
-console.log('Connected');
+console.log("Connected");

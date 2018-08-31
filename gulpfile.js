@@ -35,8 +35,7 @@ gulp.task("js:libs", function() {
   return gulp
     .src([
       "./node_modules/svg4everybody/dist/svg4everybody.legacy.min.js",
-      "./node_modules/jquery/dist/jquery.min.js",
-      "./node_modules/smartmenus/dist/jquery.smartmenus.min.js"
+      "./node_modules/jquery/dist/jquery.min.js"
     ])
     .pipe(plugins.concat("main.min.libs.js"))
     .pipe(gulp.dest("./build/js"))

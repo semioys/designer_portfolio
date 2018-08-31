@@ -1,3 +1,26 @@
 header.header
   .wrapper
-    
+    .header__topbar
+      img.logo(src="./img/header_logo.png", alt="Header logo")
+      .header__menu
+        ul#menu.header__navbar
+          li
+            a.header__link(href="#") Главная
+          li
+            a.header__link(href="#") Про меня
+          li
+            a.header__link(href="#") Что делаю
+          li
+            a.header__link(href="#") Портфолио
+          li
+            a.header__link(href="#") Контакты
+        select.header__lang
+          option.header__switch(value="UA") UA
+          option.header__switch(value="RU") RU
+    .header__content
+      h2.header__title Привет. Меня зовут Владислав
+      h1.header__subtitle. 
+        Я профессиональный <span class="header__accent"> Веб-дизайнер </span>
+      a.header__contact-link(href="#") Связаться
+    a.header__scroll-down(href='#')
+       

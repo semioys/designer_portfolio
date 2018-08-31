@@ -38,7 +38,6 @@
     "hoek": "^5.0.4",
     "node-mime": "^1.0.0",
     "normalize.css": "^8.0.0",
-    "smartmenus": "^1.1.0",
     "svg4everybody": "^2.1.9"
   }
 }
