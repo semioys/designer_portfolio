@@ -6,3 +6,33 @@ $(function() {
     animationType: "slide"
   });
 });
+
+$(function() {
+  //Barfillers
+
+  $(window).on("scroll", function() {
+    var bodyScroll = $(window).scrollTop();
+
+    if (bodyScroll > 300) {
+      $("#bar1").barfiller({
+        // duration in ms
+        duration: 800
+      });
+
+      $("#bar2").barfiller({
+        // duration in ms
+        duration: 1200
+      });
+
+      $("#bar3").barfiller({
+        // duration in ms
+        duration: 1600
+      });
+
+      $("#bar4").barfiller({
+        // duration in ms
+        duration: 2000
+      });
+    }
+  });
+});

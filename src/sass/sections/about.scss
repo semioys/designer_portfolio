@@ -1,0 +1,95 @@
+.about {
+  padding-top: 100px;
+  padding-bottom: 115px; // Plus padding from CV button
+
+  &__inner {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  &__right {
+    flex-basis: 55%;
+  }
+
+  &__left {
+    flex-basis: 36%;
+  }
+
+  &__name {
+    font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 46px;
+  }
+
+  &__desc {
+    color: #404040;
+    line-height: 25px;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+
+  &__skills {
+    margin-bottom: 65px;
+  }
+
+  &__barname {
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+  &__contacts {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: 65px; // Plus padding from CV button
+  }
+
+  &__icon-wrap {
+    padding: 20px;
+    border: 1px solid #000;
+  }
+
+  &__contact {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+    &__link {
+      text-decoration: none;
+      color: #000;
+      margin-left: 30px;
+    }
+
+    &__text {
+      font-size: 18px;
+      font-weight: 300;
+      margin: 0;
+    }
+  }
+
+  &__cv {
+    font-size: 22px;
+    text-decoration: none;
+    padding: 15px 36px;
+    color: #fff;
+    background-color: #000;
+    text-transform: uppercase;
+
+    transition: color 0.25s, border-color 0.25s, background-color 0.25s,
+      opacity 0.25s ease 0s;
+
+    &:hover {
+      background-color: lighten($color: #000000, $amount: 25%);
+    }
+  }
+}
+
+.about-icon {
+  width: 20px;
+  height: 20px;
+}

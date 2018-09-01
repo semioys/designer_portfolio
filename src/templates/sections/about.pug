@@ -1,0 +1,38 @@
+section#about.about
+  .container
+    .about__inner
+      .about__right
+        h2.about__name Я, Владислав Гурский, 
+        p.about__desc веб дизайнер из украинского города Житомир, специализируюсь на UI/UX Design. Я создаю привлекательные удобные и функционльные интерфейсы которые сответствуют последним стандартам веб-индустрии.
+        .about__skills
+          h3.about__barname Design
+          #bar1.barfiller
+            span.tip 90%
+            span.fill(data-percentage='90')
+          h3.about__barname HTML
+          #bar2.barfiller
+            span.tip 85%
+            span.fill(data-percentage='85')
+          h3.about__barname CSS3
+          #bar3.barfiller
+            span.tip 88%
+            span.fill(data-percentage='88')
+          h3.about__barname Javascript
+          #bar4.barfiller
+            span.tip 78%
+            span.fill(data-percentage='78')
+        .about__contacts
+          .about__contact.about__call
+            .about__icon-wrap
+              +icon('call', 'about-icon')
+            a.about__contact__link(href="tel:+380935129317")
+              h4.about__contact__text +38 (093) 512 93 17
+          .about__contact.about__mail
+            .about__icon-wrap
+              +icon('mail', 'about-icon')
+            a.about__contact__link(href="mailto:spleet345@gmail.com")
+              h4.about__contact__text spleet345@gmail.com
+        a.about__cv(href="#") Скачать резюме
+      .about__left
+        img.about__photo(src="./img/about-photo.png", alt="Photo")  
+

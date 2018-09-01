@@ -1,7 +1,7 @@
 html {
   box-sizing: border-box;
   font-family: "Open Sans";
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 *,
@@ -13,6 +13,11 @@ html {
 ul,
 ol {
   list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
