@@ -31,6 +31,11 @@
     font-size: 36px;
     margin-top: 0;
     margin-bottom: 46px;
+
+    @media screen and (max-width: 992px) {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
   }
 
   &__desc {
@@ -38,10 +43,19 @@
     line-height: 25px;
     margin-top: 0;
     margin-bottom: 50px;
+
+    @media screen and (max-width: 992px) {
+      font-size: 14px;
+      margin-bottom: 25px;
+    }
   }
 
   &__skills {
     margin-bottom: 65px;
+
+    @media screen and (max-width: 992px) {
+      margin-bottom: 35px;
+    }
   }
 
   &__barname {
@@ -57,11 +71,19 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     margin-bottom: 65px; // Plus padding from CV button
+
+    @media screen and (max-width: 992px) {
+      margin-bottom: 55px;
+    }
   }
 
   &__icon-wrap {
     padding: 20px;
     border: 1px solid #000;
+
+    @media screen and (max-width: 992px) {
+      padding: 10px;
+    }
   }
 
   &__contact {
@@ -69,11 +91,18 @@
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-between;
+    @media screen and (max-width: 992px) {
+      max-width: 49%;
+    }
 
     &__link {
       text-decoration: none;
       color: #000;
       margin-left: 30px;
+
+      @media screen and (max-width: 992px) {
+        margin-left: 15px;
+      }
     }
 
     &__text {
@@ -83,6 +112,10 @@
 
       @media screen and (max-width: 1200px) {
         font-size: 16px;
+      }
+
+      @media screen and (max-width: 992px) {
+        font-size: 14px;
       }
     }
   }
@@ -100,6 +133,10 @@
 
     &:hover {
       background-color: lighten($color: #000000, $amount: 25%);
+    }
+
+    @media screen and (max-width: 992px) {
+      font-size: 18px;
     }
   }
 }

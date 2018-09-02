@@ -2,12 +2,6 @@ svg4everybody();
 console.log("Connected");
 
 $(function() {
-  $(".ah-container").animatedHeadline({
-    animationType: "slide"
-  });
-});
-
-$(function() {
   // SrollIT
   $.scrollIt({
     upKey: 38, // key code to navigate to the next section

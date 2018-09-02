@@ -153,6 +153,21 @@
     @media screen and (max-width: 992px) {
       font-size: 28px;
       text-align: center;
+      flex-basis: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  &__accent {
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 75px;
+
+    @media screen and (max-width: 992px) {
+      font-size: 28px;
     }
   }
   &__contact-link {
@@ -221,5 +236,28 @@
   }
   100% {
     top: 17px;
+  }
+}
+
+.cd-headline.clip {
+  width: 850px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 992px) {
+    width: 600px;
+    flex-wrap: wrap;
+  }
+}
+
+.cd-intro {
+  width: 850px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 992px) {
+    width: 600px;
   }
 }
