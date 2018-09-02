@@ -137,18 +137,24 @@
     font-size: 48px;
     font-weight: bold;
     margin-bottom: 60px;
+
+    @media screen and (max-width: 992px) {
+      font-size: 36px;
+    }
   }
   &__subtitle {
+    font-weight: bold;
+    text-align: center;
     text-transform: uppercase;
     font-size: 36px;
     font-weight: 400;
     margin-bottom: 75px;
-  }
 
-  &__accent {
-    font-weight: bold;
+    @media screen and (max-width: 992px) {
+      font-size: 28px;
+      text-align: center;
+    }
   }
-
   &__contact-link {
     text-decoration: none;
     text-transform: uppercase;
