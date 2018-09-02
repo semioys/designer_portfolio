@@ -8,6 +8,10 @@
   position: relative;
   height: 100vh;
 
+  @media screen and (max-width: 568px) {
+    height: 95vh;
+  }
+
   color: #fff;
 
   &__hamburger {
@@ -166,6 +170,10 @@
     left: 0;
     right: 0;
     max-width: 100%;
+
+    @media screen and (max-width: 568px) {
+      top: 20%; // Random number
+    }
   }
 
   &__title {
@@ -176,6 +184,14 @@
 
     @media screen and (max-width: 992px) {
       font-size: 36px;
+    }
+    @media screen and (max-width: 568px) {
+      font-size: 32px;
+    }
+
+    @media screen and (max-width: 400px) {
+      font-size: 26px;
+      margin-bottom: 30px;
     }
   }
   &__subtitle {
@@ -192,6 +208,10 @@
       flex-basis: 100%;
       margin-bottom: 10px;
     }
+
+    @media screen and (max-width: 568px) {
+      font-size: 22px;
+    }
   }
   &__accent {
     margin: 0;
@@ -204,6 +224,11 @@
 
     @media screen and (max-width: 992px) {
       font-size: 28px;
+    }
+
+    @media screen and (max-width: 568px) {
+      font-size: 22px;
+      margin-bottom: 55px;
     }
   }
   &__contact-link {
@@ -291,6 +316,9 @@
   @media screen and (max-width: 768px) {
     width: 500px;
   }
+  @media screen and (max-width: 568px) {
+    width: 300px;
+  }
 }
 
 .cd-intro {
@@ -303,6 +331,10 @@
 
   @media screen and (max-width: 768px) {
     width: 500px;
+  }
+
+  @media screen and (max-width: 568px) {
+    width: 300px;
   }
 }
 

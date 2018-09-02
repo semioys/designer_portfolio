@@ -12,6 +12,11 @@
     padding-bottom: 75px;
   }
 
+  @media screen and (max-width: 568px) {
+    padding-top: 50px;
+    padding-bottom: 65px;
+  }
+
   &__inner {
     display: flex;
     flex-flow: row wrap;
@@ -101,6 +106,13 @@
     @media screen and (max-width: 992px) {
       margin-bottom: 55px;
     }
+
+    @media screen and (max-width: 568px) {
+      flex-direction: column;
+    }
+    @media screen and (max-width: 568px) {
+      margin-bottom: 45px;
+    }
   }
 
   &__icon-wrap {
@@ -119,6 +131,11 @@
     justify-content: space-between;
     @media screen and (max-width: 992px) {
       max-width: 49%;
+    }
+    @media screen and (max-width: 568px) {
+      max-width: 100%;
+      justify-content: flex-start;
+      margin-bottom: 15px;
     }
 
     &__link {
@@ -142,6 +159,9 @@
 
       @media screen and (max-width: 992px) {
         font-size: 14px;
+      }
+      @media screen and (max-width: 568px) {
+        margin-left: 10px;
       }
     }
   }

@@ -11,6 +11,10 @@
     padding: 60px 0 60px 0;
   }
 
+  @media screen and (max-width: 568px) {
+    padding: 50px 0 50px 0;
+  }
+
   &__title {
     margin-bottom: 95px;
 
@@ -22,6 +26,9 @@
       }
       @media screen and (max-width: 768px) {
         width: 63%;
+      }
+      @media screen and (max-width: 768px) {
+        width: 100%;
       }
     }
 
@@ -101,6 +108,10 @@
     font-weight: bold;
     color: #fff;
     margin-bottom: 65px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+    }
   }
 
   &__link {
@@ -113,6 +124,11 @@
     padding: 15px 45px;
     transition: color 0.25s, border-color 0.25s, background-color 0.25s,
       opacity 0.25s ease 0s;
+
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
 
     &:hover {
       border-color: #00b4fb;

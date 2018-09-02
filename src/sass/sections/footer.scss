@@ -15,6 +15,10 @@
     display: flex;
     flex-flow: column wrap;
     align-items: center;
+
+    @media screen and (max-width: 768px) {
+      text-align: center;
+    }
   }
 
   &__logo {

@@ -10,6 +10,10 @@
     padding: 60px 0 60px 0;
   }
 
+  @media screen and (max-width: 568px) {
+    padding: 50px 0 50px 0;
+  }
+
   &__title {
     font-weight: bold;
     margin-bottom: 85px;
@@ -19,6 +23,9 @@
 
       @media screen and (max-width: 992px) {
         width: 24%;
+      }
+      @media screen and (max-width: 768px) {
+        width: 55%;
       }
     }
     @media screen and (max-width: 992px) {
@@ -106,6 +113,10 @@
     width: 49%;
 
     &:nth-of-type(3) {
+      width: 100%;
+    }
+
+    @media screen and (max-width: 768px) {
       width: 100%;
     }
   }
