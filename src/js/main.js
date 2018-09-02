@@ -81,6 +81,16 @@ $(function() {
     ],
     autoplay: true,
     autoplayTimeout: 2000,
-    autoplayHoverPause: true
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: true
+      },
+      768: {
+        items: 2,
+        nav: true
+      }
+    }
   });
 });

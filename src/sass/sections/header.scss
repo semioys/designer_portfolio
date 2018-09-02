@@ -287,6 +287,10 @@
     width: 600px;
     flex-wrap: wrap;
   }
+
+  @media screen and (max-width: 768px) {
+    width: 500px;
+  }
 }
 
 .cd-intro {
@@ -295,6 +299,10 @@
 
   @media screen and (max-width: 992px) {
     width: 600px;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 500px;
   }
 }
 
