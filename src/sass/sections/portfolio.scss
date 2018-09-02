@@ -97,7 +97,7 @@
 
 .owl-carousel .owl-nav button.owl-next,
 .owl-carousel .owl-nav button.owl-prev {
-  padding: 0 10px !important;
+  padding: 0 20px !important;
 
   &:focus {
     outline: none;
@@ -109,4 +109,8 @@
 }
 .owl-stage {
   margin-bottom: 30px;
+}
+
+.owl-dots {
+  display: none;
 }
