@@ -28,6 +28,20 @@
     }
   }
 
+  &__photo {
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+    &--mobile {
+      display: none;
+      @media screen and (max-width: 768px) {
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+
   &__right {
     flex-basis: 55%;
 
