@@ -1,33 +1,35 @@
-header.header
+header.header(data-scroll-index="0")
+  .header__topbar
+    .container
+      .header__inner-nav
+        a.header__logo-link(href="/")
+          img.logo(src="./img/logo.png", alt="Header logo")
+        .header__menu
+          ul.header__navbar
+            li.header__item
+              a.header__link.header__link--active(href="#" data-scroll-nav="0") Главная
+            li.header__item
+              a.header__link(href="#" data-scroll-nav="1") Обо мне
+            li.header__item
+              a.header__link(href="#" data-scroll-nav="2") Что делаю
+            li.header__item
+              a.header__link(href="#" data-scroll-nav="3") Портфолио
+            li.header__item
+              a.header__link(href="#" data-scroll-nav="4") Контакты
+          select.header__lang
+            option.header__switch(value="UA") UA
+            option.header__switch(value="RU") RU
   .container
-    .header__topbar
-      a.header__logo-link(href="/")
-        img.logo(src="./img/logo.png", alt="Header logo")
-      .header__menu
-        ul.header__navbar
-          li.header__item
-            a.header__link.header__link--active(href="#") Главная
-          li.header__item
-            a.header__link(href="#") Обо мне
-          li.header__item
-            a.header__link(href="#") Что делаю
-          li.header__item
-            a.header__link(href="#") Портфолио
-          li.header__item
-            a.header__link(href="#") Контакты
-        select.header__lang
-          option.header__switch(value="UA") UA
-          option.header__switch(value="RU") RU
     .header__content
       h2.header__title Привет. Меня зовут Владислав
       .ah-container
         .ah-headline
-          <span class="header__title header__subtitle">Я профессиональный </span>
+          <span class="header__title header__subtitle">Я профессиональный&nbsp;</span>
           <span class="header__accent header__subtitle ah-words-wrapper">  
-            <b class="is-visible">Веб-разработчик</b>
-            <b>&nbsp; &nbsp;Веб-дизайнер</b>
+            <b class="is-visible">Веб-разработчик&nbsp;</b>
+            <b>&nbsp; Веб-дизайнер</b>
           </span>
-      a.header__contact-link(href="#contacts") Связаться
-    a.header__scroll-down(href='#about')
-      
+      a.header__contact-link(href="#" data-scroll-nav="4") Связаться
+    a.header__scroll-down(href='#' data-scroll-nav="1")
+    
        
