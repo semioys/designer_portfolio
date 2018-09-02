@@ -1,0 +1,28 @@
+section.contacts#contacts
+  .container
+    .contacts__title.section__title КОНТАКТЫ
+    .contacts__inner
+      .contacts__left 
+        .contacts__info
+          .contacts__box
+            h4.contacts__info-name Адрес
+            a.contacts__desc(href="https://goo.gl/maps/vP9HAXw27m52") г. Житомир, Украина.
+          .contacts__box
+            h4.contacts__info-name Электронный адрес
+            a.contacts__desc(href="mailto:spleet345@gmail.com") spleet345@gmail.com
+          .contacts__box
+            h4.contacts__info-name Телефон
+            a.contacts__desc(href="tel:+380935129317") +38(093)-51-293-17
+      .contacts__right
+        form(action="#").contacts__form
+          .contacts__group
+            input.contacts__name(type="text", name="name", placeholder="Имя")
+            span.alert Это поле обязательно к заполнению
+          .contacts__group
+            input.contacts__email(type="email", name="email", placeholder="Электронный адрес")
+            span.alert Это поле обязательно к заполнению
+          input.contacts__subject(type="text", name="subject", placeholder="Тема")
+          .contacts__group
+            textarea.contacts__text(name="letter", cols="30", rows="10", placeholder="Сообщение")
+            span.alert Это поле обязательно к заполнению
+          button.contacts__submit(type="submit") Отправить
