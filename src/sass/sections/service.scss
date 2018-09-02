@@ -11,23 +11,7 @@
   color: #fff;
 
   &__title {
-    margin: 0;
     margin-bottom: 150px;
-    font-size: 36px;
-    text-transform: uppercase;
-    position: relative;
-
-    &:after {
-      position: absolute;
-      content: "";
-      height: 2px;
-      bottom: -15px;
-      margin: 0 auto;
-      left: 0;
-      right: 0;
-      width: 25%;
-      background: #00b4fb;
-    }
   }
 
   &__inner {

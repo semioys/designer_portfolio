@@ -35,4 +35,18 @@ $(function() {
       });
     }
   });
+
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    items: 2,
+    navText: [
+      "<img src='./img/arrow-right.png'/>",
+      "<img src='./img/arrow-left.png'/>"
+    ],
+    autoplay: true,
+    autoplayTimeout: 2000,
+    autoplayHoverPause: true
+  });
 });

@@ -15,6 +15,7 @@ gulp.task("js", function() {
   return gulp
     .src([
       "./src/js/barfiller.js",
+      "./src/js/owl.carousel.min.js",
       "./src/js/jquery.animatedheadline.min.js",
       "./src/js/main.js"
     ])
