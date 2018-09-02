@@ -1,6 +1,23 @@
 svg4everybody();
 console.log("Connected");
 
+$(document).ready(function() {
+  $(".header__hamburger").click(function(e) {
+    $(".header__mobile").toggleClass("active");
+    e.preventDefault();
+  });
+});
+
+$(document).ready(function() {
+  $(".header__item--mobile").click(function(e) {
+    if ($(e.target).hasClass("header__link")) {
+      $(".header__mobile").toggleClass("active");
+    }
+
+    e.preventDefault();
+  });
+});
+
 $(function() {
   // SrollIT
   $.scrollIt({

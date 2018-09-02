@@ -10,6 +10,28 @@
 
   color: #fff;
 
+  &__hamburger {
+    display: none;
+
+    @media screen and (max-width: 768px) {
+      margin-left: 10px;
+      display: block;
+    }
+  }
+
+  &__mobile {
+    transition: 0.3s;
+    display: none;
+    @media screen and (max-width: 768px) {
+    }
+  }
+
+  &__item--mobile {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #000 !important;
+  }
+
   &__topbar {
     width: 100%;
     padding-top: 20px;
@@ -48,6 +70,10 @@
     padding: 0;
     display: flex;
     flex-flow: row wrap;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
 
   &__item {
@@ -91,6 +117,16 @@
       background: #fff;
       transition: width 0.3s;
       width: 100%;
+      @media screen and (max-width: 768px) {
+        display: none;
+        background: #000 !important;
+      }
+    }
+
+    &--active {
+      @media screen and (max-width: 768px) {
+        background: #000 !important;
+      }
     }
   }
 
@@ -260,4 +296,23 @@
   @media screen and (max-width: 992px) {
     width: 600px;
   }
+}
+
+.icon-hamburger {
+  fill: #fff;
+  height: 25px;
+  width: 25px;
+}
+
+.active {
+  display: flex;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  text-align: center;
+  z-index: 9999;
+  position: relative;
 }

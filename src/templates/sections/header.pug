@@ -19,6 +19,19 @@ header.header(data-scroll-index="0")
           select.header__lang
             option.header__switch(value="UA") UA
             option.header__switch(value="RU") RU
+          a.header__hamburger(href="#")
+            +icon('hamburger')
+      ul.header__mobile
+        li.header__item--mobile
+          a.header__link.header(href="#" data-scroll-nav="0" style="background: #000") Главная
+        li.header__item--mobile
+          a.header__link(href="#" data-scroll-nav="1") Обо мне
+        li.header__item--mobile
+          a.header__link(href="#" data-scroll-nav="2") Что делаю
+        li.header__item--mobile
+          a.header__link(href="#" data-scroll-nav="3") Портфолио
+        li.header__item--mobile
+          a.header__link(href="#" data-scroll-nav="4") Контакты
   .container
     .header__content
       h2.header__title Привет. Меня зовут Владислав
