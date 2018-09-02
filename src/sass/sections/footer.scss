@@ -1,0 +1,43 @@
+.footer {
+  padding: 50px 0;
+  background-color: #1c1e21;
+  color: #fff;
+
+  &__inner {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-bottom: 30px;
+  }
+
+  &__icons {
+    margin-bottom: 30px;
+  }
+
+  &__icon {
+    width: 16px;
+    height: 16px;
+    fill: #fff;
+    transition: all 0.3s;
+
+    &:hover {
+      fill: #00b4fb;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    margin-left: 30px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  &__copy {
+    margin: 0;
+  }
+}
